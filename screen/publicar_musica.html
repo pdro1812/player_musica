@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Cadastro de Músicas</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Cadastro de Músicas</h2>
+
+        <form>
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Título:</label>
+                <input type="text" class="form-control" id="titulo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="letra" class="form-label">Letra:</label>
+                <textarea class="form-control" id="letra" rows="4" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="compositor" class="form-label">Compositor:</label>
+                <input type="text" class="form-control" id="compositor" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="album" class="form-label">Álbum:</label>
+                <input type="text" class="form-control" id="album" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="mp4" class="form-label">Arquivo MP4:</label>
+                <input type="file" class="form-control" id="mp4" accept=".mp4" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="foto" class="form-label">Foto:</label>
+                <input type="file" class="form-control" id="foto" accept="image/*" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="estilo" class="form-label">Estilo:</label>
+                <select class="form-select" id="estilo" required>
+          <option value="" disabled selected>Selecione o estilo</option>
+          <option value="sertanejo">Sertanejo</option>
+          <option value="funk">Funk</option>
+          <option value="eletronica">Eletrônica</option>
+        </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-3">Cadastrar Música</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

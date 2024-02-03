@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tela do Artista</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark p-3">
+        <input type="text" class="form-control rounded-pill" placeholder="Buscar música ou álbum">
+        <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-circle" id="user-avatar">
+    </nav>
+
+    <div class="container mt-5 position-relative">
+        <!-- Imagem Quadrada -->
+        <img src="https://web.portalsucesso.com.br/wp-content/uploads/2022/10/icaro-e-gilmar-20-out.png" class="img-fluid" alt="Imagem Quadrada">
+
+        <!-- Nome do Artista -->
+        <h2 class="position-absolute text-black" style="bottom: 0; left: 0; z-index: 1;">Nome do Artista</h2>
+
+        <!-- Imagem Redonda -->
+        <img src="https://jornalamericanense.com.br/wp-content/uploads/2022/10/icaro-e-gilmar-mega-show-noticia-2022.jpg" alt="Imagem Redonda" class="rounded-circle position-absolute" style="width: 75px; height: 75px; bottom: 0; left: 0;">
+    </div>
+
+    <div class="container mt-3">
+        <h2>Nome do Artista</h2>
+
+        <!-- Tabela das 10 músicas mais ouvidas -->
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <caption>Top 10 Músicas Mais Ouvidas</caption>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome da Música</th>
+                        <th>Álbum</th>
+                        <th>Reproduções</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>X
+                        <td>1</td>
+                        <td>Música 1</td>
+                        <td>Álbum A</td>
+                        <td>1000</td>
+                    </tr>
+                    <!-- Adicione mais linhas conforme necessário -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Seção de Álbuns -->
+        <h3 class="mt-4">Álbuns</h3>
+        <div class="row">
+            <div class="col-md-4 album">
+                <img src="https://via.placeholder.com/200" alt="Álbum 1" class="img-fluid rounded">
+                <h4 class="mt-2">Nome do Álbum 1</h4>
+            </div>
+            <div class="col-md-4 album">
+                <img src="https://via.placeholder.com/200" alt="Álbum 2" class="img-fluid rounded">
+                <h4 class="mt-2">Nome do Álbum 2</h4>
+            </div>
+            <div class="col-md-4 album">
+                <img src="https://via.placeholder.com/200" alt="Álbum 3" class="img-fluid rounded">
+                <h4 class="mt-2">Nome do Álbum 3</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-bottom bg-dark text-white p-3 d-flex justify-content-between">
+        <div class="d-flex flex-column align-items-center me-auto">
+            <img src="https://via.placeholder.com/50" alt="Music Image" class="img-fluid rounded">
+            <p class="fw-bold mt-2">Nome da Música</p>
+            <small class="font-italic">Compositor</small>
+        </div>
+        <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pause-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('user-avatar').addEventListener('click', function() {
+            // Lógica para abrir o menu de configuração
+            alert('Abrir menu de configuração');
+        });
+    </script>
+
+</body>
+
+</html>
